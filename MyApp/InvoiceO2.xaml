@@ -1,0 +1,115 @@
+﻿<Window x:Class="MyApp.InvoiceO2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyApp"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+                MinHeight="29.7cm"
+        MinWidth="21cm"
+        Title="InvoiceO2" Height="29.7cm" Width="21cm"  ContentRendered="ContentRenderedEvent" ResizeMode="NoResize">
+    <Grid RenderTransformOrigin="0.505,0.527">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="180*"/>
+            <RowDefinition Height="133*"/>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="700*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="47*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="673*"/>
+            <ColumnDefinition Width="56*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="South Eastern Counselling&#xA;                and Psychology" HorizontalAlignment="Left" Margin="130,58,0,0" VerticalAlignment="Top" Height="99" Width="481" FontFamily="Century Gothic" FontSize="32" FontWeight="Bold" Grid.Column="2"/>
+        <Image x:Name="Image" HorizontalAlignment="Left" Height="101" Margin="0,39,0,0" VerticalAlignment="Top" Width="133" Grid.Column="2" />
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="0,156,0,0" Stroke="Black" VerticalAlignment="Top" Width="672" Grid.Column="2"/>
+        <Label Content="TAX INVOICE" Grid.Column="2" HorizontalAlignment="Left" Margin="0,173,0,0" VerticalAlignment="Top" Height="38" Width="129" FontSize="18" FontWeight="Bold" FontFamily="Century Gothic" Grid.RowSpan="2" RenderTransformOrigin="0.54,1.423"/>
+        <Label x:Name="lblName1" Content="JOHN" Grid.Column="2" HorizontalAlignment="Left" Margin="0,31,0,0" VerticalAlignment="Top" Height="38" Width="271" FontSize="18" FontFamily="Century Gothic" Grid.Row="1"/>
+        <Label x:Name="lblABN" Content="ABN: 66 052 993 048" Grid.Column="2" HorizontalAlignment="Left" Margin="0,53,0,0" VerticalAlignment="Top" Height="38" Width="204" FontSize="18" FontFamily="Century Gothic" Grid.Row="1"/>
+        <Label x:Name="lblDateMain" Content="22/22/2222" Grid.Column="2" HorizontalAlignment="Left" Margin="560,173,0,0" VerticalAlignment="Top" Width="116" FontFamily="Century Gothic" FontSize="18" FontWeight="Bold" Grid.RowSpan="2" Height="32" Grid.ColumnSpan="2"/>
+        <Label Content="Date" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="18" FontWeight="Bold" Height="32" Width="51"/>
+        <Label x:Name="lblID" Content="0000" Grid.Column="2" HorizontalAlignment="Left" Margin="129,173,0,0" VerticalAlignment="Top" Height="38" Width="129" FontSize="18" FontWeight="Bold" FontFamily="Century Gothic" Grid.RowSpan="2" RenderTransformOrigin="0.54,1.423"/>
+        <Rectangle Grid.Column="2" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="7,25,0,0" Grid.Row="2" Stroke="Black" VerticalAlignment="Top" Width="39"/>
+        <Label Content="Service Provided" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="18" FontWeight="Bold" Height="32" Width="161" Margin="254,0,0,0"/>
+        <Label Content="Fee" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="18" FontWeight="Bold" Height="32" Width="50" Margin="626,0,0,0" Grid.ColumnSpan="2"/>
+        <Rectangle Grid.Column="2" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="260,25,0,0" Grid.Row="2" Stroke="Black" VerticalAlignment="Top" Width="145"/>
+        <Rectangle Grid.Column="2" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="632,25,0,0" Grid.Row="2" Stroke="Black" VerticalAlignment="Top" Width="31"/>
+        <Label x:Name="lblName1_Copy" Content="Percentage" Grid.Column="2" HorizontalAlignment="Left" Margin="254,25,0,0" VerticalAlignment="Top" Height="38" Width="129" FontSize="16" FontFamily="Century Gothic" Grid.Row="2"/>
+        <Label x:Name="lblPercentage" Content="60/450" Grid.Column="2" HorizontalAlignment="Left" Margin="351,25,0,0" VerticalAlignment="Top" Height="38" Width="64" FontSize="16" FontFamily="Century Gothic" Grid.Row="2"/>
+        <Label x:Name="lblName1_Copy2" Content="(inc. related expenses)" Grid.Column="2" HorizontalAlignment="Left" Margin="251,42,0,0" VerticalAlignment="Top" Height="38" Width="187" FontSize="16" FontFamily="Century Gothic" Grid.Row="2" Grid.RowSpan="2"/>
+        <Label x:Name="lblDate" Content="Mon August 10th" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="187" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblClients" Content="x clients @ " Grid.Column="2" HorizontalAlignment="Left" Margin="254,0,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblFee"  Content="$299.60" Grid.Column="2" HorizontalAlignment="Left" Margin="590,1,0,0" VerticalAlignment="Top" Height="38" Width="82" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblFullClient" Content="1" Grid.Column="2" HorizontalAlignment="Left" Margin="238,0,0,0" VerticalAlignment="Top" Height="38" Width="30" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblSmallClient" Content="2" Grid.Column="2" HorizontalAlignment="Left" Margin="392,0,0,0" VerticalAlignment="Top" Height="38" Width="30" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblMoreClients" Content="x clients @  " Grid.Column="2" HorizontalAlignment="Left" Margin="407,0,0,0" VerticalAlignment="Top" Height="38" Width="90" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblName1_Copy1" Content="Sub Total:" Grid.Column="2" HorizontalAlignment="Left" Margin="468,148,0,0" VerticalAlignment="Top" Height="38" Width="143" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblSubTotal" Content="$299.60" Grid.Column="2" HorizontalAlignment="Left" Margin="590,148,0,0" VerticalAlignment="Top" Height="38" Width="73" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblPercGST" Content="$299.60" Grid.Column="2" HorizontalAlignment="Left" Margin="590,186,0,0" VerticalAlignment="Top" Height="38" Width="73" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblGSTCalc" Content="$299.60" Grid.Column="2" HorizontalAlignment="Left" Margin="590,224,0,0" VerticalAlignment="Top" Height="38" Width="73" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblInvTotal" Content="$299.60" Grid.Column="2" HorizontalAlignment="Left" Margin="590,262,0,0" VerticalAlignment="Top" Height="38" Width="82" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblFee5_Copy5" Content="+ GST" Grid.Column="2" HorizontalAlignment="Left" Margin="497,224,0,0" VerticalAlignment="Top" Height="38" Width="73" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblFee5_Copy6" Content="TOTAL OF THIS INVOICE:" Grid.Column="2" HorizontalAlignment="Left" Margin="269,262,0,0" VerticalAlignment="Top" Height="38" Width="202" FontSize="16" FontFamily="Century Gothic" Grid.Row="3" FontWeight="Bold"/>
+        <Label x:Name="lblFee5_Copy7" Content="PLEASE PAY USING THE INVOICE NUMBER AND NAME WITHIN 2 BUSINESS DAYS TO:" Grid.Column="2" HorizontalAlignment="Left" Margin="0,388,0,0" VerticalAlignment="Top" Height="38" Width="630" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblFee5_Copy8" Content="Account Name:      JOHN JAKUPI" Grid.Column="2" HorizontalAlignment="Left" Margin="0,426,0,0" VerticalAlignment="Top" Height="38" Width="268" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblFee5_Copy9" Content="BSB: &#x9;&#x9;      013542" Grid.Column="2" HorizontalAlignment="Left" Margin="0,448,0,0" VerticalAlignment="Top" Height="38" Width="268" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblFee5_Copy10" Content="ACCOUNT NO.        457002671" Grid.Column="2" HorizontalAlignment="Left" Margin="0,469,0,0" VerticalAlignment="Top" Height="38" Width="268" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="0,526,0,0" Stroke="Black" VerticalAlignment="Top" Width="672" Grid.Column="2" Grid.Row="3"/>
+        <Label Content="63A High St Cranbourne 3977" Grid.Column="2" HorizontalAlignment="Left" Margin="22,532,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="211"/>
+        <Label Content="8/418 Princes H/way Narre Warren 3805" Grid.Column="2" HorizontalAlignment="Left" Margin="217,532,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="240"/>
+        <Label Content="6/94 High St Berwick 3806" Grid.Column="2" HorizontalAlignment="Left" Margin="478,532,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="185"/>
+        <Label Content="Phone - " Grid.Column="2" HorizontalAlignment="Left" Margin="22,557,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="54"/>
+        <Label Content="Phone - " Grid.Column="2" HorizontalAlignment="Left" Margin="217,557,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="54"/>
+        <Label Content="Phone - " Grid.Column="2" HorizontalAlignment="Left" Margin="478,557,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="54"/>
+        <Label Content="Fax      -" Grid.Column="2" HorizontalAlignment="Left" Margin="22,582,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="54"/>
+        <Label Content="Fax      -" Grid.Column="2" HorizontalAlignment="Left" Margin="217,582,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="54"/>
+        <Label Content="Fax      -" Grid.Column="2" HorizontalAlignment="Left" Margin="478,582,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="54"/>
+        <Label Content="03 59 954 557" Grid.Column="2" HorizontalAlignment="Left" Margin="81,557,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="99" FontWeight="Bold"/>
+        <Label Content="03 59 954 559" Grid.Column="2" HorizontalAlignment="Left" Margin="81,582,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="86" FontWeight="Bold"/>
+        <Label Content="03 8586 5809" Grid.Column="2" HorizontalAlignment="Left" Margin="284,557,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="99" FontWeight="Bold"/>
+        <Label Content="03 8586 5810" Grid.Column="2" HorizontalAlignment="Left" Margin="284,582,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="99" FontWeight="Bold"/>
+        <Label Content="03 9769 7118" Grid.Column="2" HorizontalAlignment="Left" Margin="549,557,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="99" FontWeight="Bold"/>
+        <Label Content="03 9707 0679" Grid.Column="2" HorizontalAlignment="Left" Margin="549,582,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="99" FontWeight="Bold"/>
+        <Label Content="Po Box 526 Berwick    3806" Grid.Column="2" HorizontalAlignment="Left" Margin="249,612,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="189" FontWeight="Bold" FontSize="14"/>
+        <Label Content="ABN -" Grid.Column="2" HorizontalAlignment="Left" Margin="277,628,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="41"/>
+        <Label Content="56 922 385 514" Grid.Column="2" HorizontalAlignment="Left" Margin="316,628,0,0" Grid.Row="3" VerticalAlignment="Top" FontFamily="Century Gothic" Foreground="#FF615C5C" Width="99" FontWeight="Bold"/>
+        <Label x:Name="lblAmtFullClient" Content="130.00" Grid.Column="2" HorizontalAlignment="Left" Margin="336,1,0,0" VerticalAlignment="Top" Height="38" Width="61" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblAmtSmallClient" Content="84.80" Grid.Column="2" HorizontalAlignment="Left" Margin="491,0,0,0" VerticalAlignment="Top" Height="38" Width="61" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblDate2" Content="Mon August 10th" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="187" FontSize="16" FontFamily="Century Gothic" Grid.Row="3" Margin="0,18,0,0"/>
+        <Label x:Name="lblClients2" Content="x clients @ " Grid.Column="2" HorizontalAlignment="Left" Margin="254,18,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblFee2"  Content="$299.60" Grid.Column="2" HorizontalAlignment="Left" Margin="590,19,0,0" VerticalAlignment="Top" Height="38" Width="82" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblFullClient2" Content="1" Grid.Column="2" HorizontalAlignment="Left" Margin="238,18,0,0" VerticalAlignment="Top" Height="38" Width="30" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblSmallClient2" Content="2" Grid.Column="2" HorizontalAlignment="Left" Margin="392,18,0,0" VerticalAlignment="Top" Height="38" Width="30" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblMoreClients2" Content="x clients @  " Grid.Column="2" HorizontalAlignment="Left" Margin="407,18,0,0" VerticalAlignment="Top" Height="38" Width="90" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblAmtFullClient2" Content="130.00" Grid.Column="2" HorizontalAlignment="Left" Margin="336,19,0,0" VerticalAlignment="Top" Height="38" Width="61" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblAmtSmallClient2" Content="84.80" Grid.Column="2" HorizontalAlignment="Left" Margin="491,18,0,0" VerticalAlignment="Top" Height="38" Width="61" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblDate3" Content="Mon August 10th" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="187" FontSize="16" FontFamily="Century Gothic" Grid.Row="3" Margin="0,35,0,0"/>
+        <Label x:Name="lblClients3" Content="x clients @ " Grid.Column="2" HorizontalAlignment="Left" Margin="254,35,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblFee3"  Content="$299.60" Grid.Column="2" HorizontalAlignment="Left" Margin="590,36,0,0" VerticalAlignment="Top" Height="38" Width="82" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblFullClient3" Content="1" Grid.Column="2" HorizontalAlignment="Left" Margin="238,35,0,0" VerticalAlignment="Top" Height="38" Width="30" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblSmallClient3" Content="2" Grid.Column="2" HorizontalAlignment="Left" Margin="392,35,0,0" VerticalAlignment="Top" Height="38" Width="30" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblMoreClients3" Content="x clients @  " Grid.Column="2" HorizontalAlignment="Left" Margin="407,35,0,0" VerticalAlignment="Top" Height="38" Width="90" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblAmtFullClient3" Content="130.00" Grid.Column="2" HorizontalAlignment="Left" Margin="336,36,0,0" VerticalAlignment="Top" Height="38" Width="61" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblAmtSmallClient3" Content="84.80" Grid.Column="2" HorizontalAlignment="Left" Margin="491,35,0,0" VerticalAlignment="Top" Height="38" Width="61" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblDate4" Content="Mon August 10th" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="187" FontSize="16" FontFamily="Century Gothic" Grid.Row="3" Margin="0,52,0,0"/>
+        <Label x:Name="lblClients4" Content="x clients @ " Grid.Column="2" HorizontalAlignment="Left" Margin="254,52,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblFee4"  Content="$299.60" Grid.Column="2" HorizontalAlignment="Left" Margin="590,53,0,0" VerticalAlignment="Top" Height="38" Width="82" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblFullClient4" Content="1" Grid.Column="2" HorizontalAlignment="Left" Margin="238,52,0,0" VerticalAlignment="Top" Height="38" Width="30" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblSmallClient4" Content="2" Grid.Column="2" HorizontalAlignment="Left" Margin="392,52,0,0" VerticalAlignment="Top" Height="38" Width="30" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblMoreClients4" Content="x clients @  " Grid.Column="2" HorizontalAlignment="Left" Margin="407,52,0,0" VerticalAlignment="Top" Height="38" Width="90" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblAmtFullClient4" Content="130.00" Grid.Column="2" HorizontalAlignment="Left" Margin="336,53,0,0" VerticalAlignment="Top" Height="38" Width="61" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblAmtSmallClient4" Content="84.80" Grid.Column="2" HorizontalAlignment="Left" Margin="491,52,0,0" VerticalAlignment="Top" Height="38" Width="61" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblDate5" Content="Mon August 10th" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="187" FontSize="16" FontFamily="Century Gothic" Grid.Row="3" Margin="0,69,0,0"/>
+        <Label x:Name="lblClients5" Content="x clients @ " Grid.Column="2" HorizontalAlignment="Left" Margin="254,69,0,0" VerticalAlignment="Top" Height="38" Width="88" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblFee5"  Content="$299.60" Grid.Column="2" HorizontalAlignment="Left" Margin="590,70,0,0" VerticalAlignment="Top" Height="38" Width="82" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblFullClient5" Content="1" Grid.Column="2" HorizontalAlignment="Left" Margin="238,69,0,0" VerticalAlignment="Top" Height="38" Width="30" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblSmallClient5" Content="2" Grid.Column="2" HorizontalAlignment="Left" Margin="392,69,0,0" VerticalAlignment="Top" Height="38" Width="30" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblMoreClients5" Content="x clients @  " Grid.Column="2" HorizontalAlignment="Left" Margin="407,69,0,0" VerticalAlignment="Top" Height="38" Width="90" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblAmtFullClient5" Content="130.00" Grid.Column="2" HorizontalAlignment="Left" Margin="336,70,0,0" VerticalAlignment="Top" Height="38" Width="61" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblAmtSmallClient5" Content="84.80" Grid.Column="2" HorizontalAlignment="Left" Margin="491,69,0,0" VerticalAlignment="Top" Height="38" Width="61" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+        <Label x:Name="lblGST" Content="x 38% - GST" Grid.Column="2" HorizontalAlignment="Left" Margin="456,186,0,0" VerticalAlignment="Top" Height="38" Width="103" FontSize="16" FontFamily="Century Gothic" Grid.Row="3"/>
+
+    </Grid>
+</Window>
